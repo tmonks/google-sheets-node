@@ -12,11 +12,7 @@ Here are the basic steps:
 5. Get the `client_email` from the `client_secrets.json` file
 6. Create a copy of the [Google Sheet Example](https://docs.google.com/spreadsheets/d/1BxiMVs0XRA5nFMdKvBdBZjgmUUqptlbs74OgvE2upms/edit)
 7. In the copy, click the Share button and add the email address
-7. Copy the spreadsheet ID from the URL. For example... 
-    
-    https://docs.google.com/spreadsheets/d/1BafSrhRTLCd1AyqPdKSN2dtpvIE8kuWFoQGSYHzVcrc/edit#gid=0
-                                           ^-------- this is spreadsheet ID ----------^
-            
+7. Copy the spreadsheet ID from the URL (the part between `d/` and `/edit`, for example: _https://docs.google.com/spreadsheets/d/<**alphanumeric spreadsheet ID**>/edit#gid=0_)
 8. In `spreadsheet.js`, update the spreadsheet ID on this row:
 ```
 const doc = new GoogleSpreadsheet("1BafSrhRTLCd1AyqPdKSN2dtpvIE8kuWFoQGSYHzVcrc");
